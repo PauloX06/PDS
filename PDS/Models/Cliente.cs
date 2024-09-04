@@ -27,9 +27,7 @@ namespace PDS.Models
 
         public string Email { get; set; }
 
-        public string Descricao { get; set; }
-
-        public bool Feito { get; set; } = false;
+       
     }
 
 

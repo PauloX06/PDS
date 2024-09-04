@@ -24,11 +24,7 @@ namespace PDS.Dtos
 
         public string Email { get; set; }
 
-        [Required]
-            [MinLength(5)]
-            public string Descricao { get; set; }
         
-            public bool Feito { get; set; } = false;
 
     }
 }

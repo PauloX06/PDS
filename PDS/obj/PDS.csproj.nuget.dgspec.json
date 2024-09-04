@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cliente\\source\\repos\\PDS\\PDS\\PDS.csproj": {}
+    "C:\\Users\\Cliente\\Documents\\GitHub\\PDS\\PDS\\PDS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cliente\\source\\repos\\PDS\\PDS\\PDS.csproj": {
+    "C:\\Users\\Cliente\\Documents\\GitHub\\PDS\\PDS\\PDS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cliente\\source\\repos\\PDS\\PDS\\PDS.csproj",
+        "projectUniqueName": "C:\\Users\\Cliente\\Documents\\GitHub\\PDS\\PDS\\PDS.csproj",
         "projectName": "PDS",
-        "projectPath": "C:\\Users\\Cliente\\source\\repos\\PDS\\PDS\\PDS.csproj",
+        "projectPath": "C:\\Users\\Cliente\\Documents\\GitHub\\PDS\\PDS\\PDS.csproj",
         "packagesPath": "C:\\Users\\Cliente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cliente\\source\\repos\\PDS\\PDS\\obj\\",
+        "outputPath": "C:\\Users\\Cliente\\Documents\\GitHub\\PDS\\PDS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

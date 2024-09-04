@@ -10,32 +10,31 @@ namespace PDS.Controllers
     public class TarefaController : ControllerBase
     {
 
-        List<Cliente> listaTarefas = new List<Cliente>();
-
-        public TarefaController()
+        private static readonly string[] Summaries = new[]
         {
-            var tarefa1 = new Cliente()
-            {
-                Id = 1,
-                Descricao = "Estudo de API part 1"
-            };
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
 
+        private readonly ILogger<TarefaController> _logger;
 
-            var tarefa2 = new Cliente()
-            {
-                Id = 2,
-                Descricao = "Estudo de API part 2"
-            };
-            var tarefa3 = new Cliente()
-            {
-                Id = 3,
-                Descricao = "Estudo de API part 3"
-            };
-
-            listaTarefas.Add(tarefa1);
-            listaTarefas.Add(tarefa2);
-            listaTarefas.Add(tarefa3);
+        public TarefaController(ILogger<TarefaController> logger)
+        {
+            _logger = logger;
         }
 
+        [HttpGet(Name = "GetTarefaController")]
+        public IEnumerable<WeatherForecast> Get()
+        {
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
     }
 }
+
+    
+
